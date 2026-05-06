@@ -1,114 +1,88 @@
 import React from 'react';
-import { 
-  MapPin, 
-  MessageSquare, 
-  ShieldCheck, 
-  TrendingUp, 
-  Layout, 
-  Cpu 
-} from 'lucide-react';
+import { MapPin, MessageSquare, ShieldCheck, TrendingUp, Layout, Cpu } from 'lucide-react';
 
 export default function BentoGrid() {
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: `
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
       `}} />
 
-      <section id="solucion" className="py-20 md:py-32 px-6 sm:px-8 bg-white font-['Inter'] antialiased">
+      <section id="solucion" className="py-16 md:py-32 px-6 sm:px-8 bg-white font-['Inter'] antialiased">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-6">
             
-            {/* Tarjeta Principal (Izquierda) */}
-            <div className="lg:col-span-7 bg-[#F8FAFC] rounded-[2.5rem] p-10 md:p-14 lg:p-16 border border-gray-100 flex flex-col justify-between overflow-hidden relative group">
+            <div className="lg:col-span-7 bg-[#F8FAFC] rounded-[2.5rem] p-8 md:p-14 lg:p-16 border border-gray-100 flex flex-col justify-between overflow-hidden relative group">
               
-              {/* Contenido Principal */}
-              <div className="relative z-10">
-                <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mb-10 shadow-sm border border-gray-100">
-                  <Layout size={22} className="text-[#2563EB]" />
+              <img 
+                src="https://pub-25cde2184a5249da96fa022aae951321.r2.dev/activaweb/cozy.webp" 
+                alt="Usuario" 
+                className="hidden md:block absolute right-0 bottom-0 h-[100%] w-[55%] object-cover object-left-top opacity-20 rounded-tl-[3rem] transition-transform duration-700 group-hover:scale-[1.02] pointer-events-none z-0" 
+              />
+
+              <div className="relative z-10 md:w-[70%]">
+                <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-8 md:mb-10 shadow-sm border border-gray-100">
+                  <Layout size={26} className="text-[#2563EB]" />
                 </div>
                 
-                <h2 className="font-['Plus_Jakarta_Sans'] text-4xl md:text-5xl lg:text-[56px] font-extrabold mb-6 leading-[1.05] tracking-tighter text-[#0F172A]">
-                  Su consultorio no puede <br className="hidden md:block" />
-                  permitirse ser <span className="text-[#2563EB]">segundo.</span>
+                <h2 className="font-['Plus_Jakarta_Sans'] text-5xl sm:text-6xl lg:text-[60px] font-extrabold mb-6 leading-[1.05] tracking-tighter text-[#0F172A]">
+                  No deje que sus <br className="hidden md:block" />pacientes
+                  se vayan al <span className="text-[#2563EB]">vecino.</span>
                 </h2>
                 
-                <p className="text-lg md:text-xl text-[#64748B] max-w-lg leading-relaxed font-medium">
-                  Optimizamos para los Core Web Vitals de Google. Su negocio aparecerá arriba porque su web carga al instante.
+                {/* TEXTO MÁS GRANDE: text-xl a text-2xl */}
+                <p className="text-xl md:text-2xl text-[#64748B] max-w-sm leading-relaxed font-semibold">
+                  El 80% de los clientes abandonan un sitio si tarda más de 3 segundos en cargar. Su consultorio no puede permitirse tener una página lenta o caída.
                 </p>
               </div>
 
-              {/* Badges / Etiquetas */}
-              <div className="mt-12 md:mt-20 flex flex-wrap gap-4 relative z-10">
-                <div className="flex items-center gap-2.5 bg-white px-5 py-2.5 rounded-xl border border-gray-100 shadow-sm text-[11px] font-bold uppercase tracking-[0.15em] text-[#0F172A]">
-                  <div className="w-2 h-2 bg-[#22C55E] rounded-full" />
-                  SEO On-Page Activo
+              <div className="mt-8 md:mt-16 flex flex-wrap gap-4 relative z-10">
+                <div className="flex items-center gap-2.5 bg-white px-5 py-3.5 rounded-xl border border-gray-100 shadow-sm text-sm font-bold uppercase tracking-[0.15em] text-[#0F172A]">
+                  <div className="w-3 h-3 bg-[#22C55E] rounded-full" />
+                  Dominación Local Activa
                 </div>
-                <div className="flex items-center gap-2.5 bg-white px-5 py-2.5 rounded-xl border border-gray-100 shadow-sm text-[11px] font-bold uppercase tracking-[0.15em] text-[#0F172A]">
-                  <Cpu size={14} className="text-[#2563EB]" />
-                  Infraestructura Cloud
+                <div className="flex items-center gap-2.5 bg-white px-5 py-3.5 rounded-xl border border-gray-100 shadow-sm text-sm font-bold uppercase tracking-[0.15em] text-[#0F172A]">
+                  <Cpu size={18} className="text-[#2563EB]" />
+                  Carga Ultra Rápida
                 </div>
               </div>
 
-              {/* Decoración de Fondo (Círculo Azul Suave) */}
               <div className="absolute -right-24 -bottom-24 w-96 h-96 bg-[#EEF2FF] rounded-full pointer-events-none transition-transform duration-700 group-hover:scale-105" />
             </div>
 
-            {/* Grid de Sub-Tarjetas (Derecha) */}
             <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-6">
-              
-              {/* Tarjeta 1: Google Maps (Oscura) */}
-              <div className="bg-[#0F172A] rounded-[2rem] p-8 md:p-10 flex flex-col justify-between aspect-square hover:-translate-y-1 transition-transform duration-300 shadow-xl shadow-slate-900/5">
-                <MapPin className="text-[#2563EB]" size={32} />
-                <div className="mt-8">
-                  <h4 className="font-['Plus_Jakarta_Sans'] font-extrabold text-[12px] uppercase tracking-[0.2em] mb-2 text-white">
-                    Google Maps
-                  </h4>
-                  <p className="text-sm text-[#94A3B8] leading-relaxed font-medium">
-                    Dominación de búsqueda local.
-                  </p>
+              <div className="bg-[#0F172A] rounded-[2rem] p-8 flex flex-col justify-between min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300 shadow-xl shadow-slate-900/5">
+                <MapPin className="text-[#2563EB]" size={40} />
+                <div className="mt-6">
+                  {/* TEXTOS MÁS GRANDES EN TARJETAS */}
+                  <h4 className="font-['Plus_Jakarta_Sans'] font-extrabold text-base uppercase tracking-[0.2em] mb-3 text-white">Google Maps</h4>
+                  <p className="text-lg text-[#94A3B8] leading-relaxed font-semibold">Sea el primero en su ciudad.</p>
                 </div>
               </div>
 
-              {/* Tarjeta 2: WhatsApp */}
-              <div className="bg-white border border-gray-100 rounded-[2rem] p-8 md:p-10 flex flex-col justify-between aspect-square hover:-translate-y-1 transition-transform duration-300">
-                <MessageSquare className="text-[#2563EB]" size={32} />
-                <div className="mt-8">
-                  <h4 className="font-['Plus_Jakarta_Sans'] font-extrabold text-[12px] uppercase tracking-[0.2em] mb-2 text-[#0F172A]">
-                    WhatsApp
-                  </h4>
-                  <p className="text-sm text-[#64748B] leading-relaxed font-medium">
-                    Conversión directa de leads.
-                  </p>
+              <div className="bg-white border border-gray-100 rounded-[2rem] p-8 flex flex-col justify-between min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300">
+                <MessageSquare className="text-[#2563EB]" size={40} />
+                <div className="mt-6">
+                  <h4 className="font-['Plus_Jakarta_Sans'] font-extrabold text-base uppercase tracking-[0.2em] mb-3 text-[#0F172A]">WhatsApp</h4>
+                  <p className="text-lg text-[#64748B] leading-relaxed font-semibold">Pacientes directos a su celular.</p>
                 </div>
               </div>
 
-              {/* Tarjeta 3: Seguridad */}
-              <div className="bg-white border border-gray-100 rounded-[2rem] p-8 md:p-10 flex flex-col justify-between aspect-square hover:-translate-y-1 transition-transform duration-300">
-                <ShieldCheck className="text-[#2563EB]" size={32} />
-                <div className="mt-8">
-                  <h4 className="font-['Plus_Jakarta_Sans'] font-extrabold text-[12px] uppercase tracking-[0.2em] mb-2 text-[#0F172A]">
-                    Seguridad
-                  </h4>
-                  <p className="text-sm text-[#64748B] leading-relaxed font-medium">
-                    Protección de datos y SSL.
-                  </p>
+              <div className="bg-white border border-gray-100 rounded-[2rem] p-8 flex flex-col justify-between min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300">
+                <ShieldCheck className="text-[#2563EB]" size={40} />
+                <div className="mt-6">
+                  <h4 className="font-['Plus_Jakarta_Sans'] font-extrabold text-base uppercase tracking-[0.2em] mb-3 text-[#0F172A]">Seguridad</h4>
+                  <p className="text-lg text-[#64748B] leading-relaxed font-semibold">Certificado SSL contra hackeos.</p>
                 </div>
               </div>
 
-              {/* Tarjeta 4: ROI Real */}
-              <div className="bg-[#F8FAFC] border border-[#E2E8F0] rounded-[2rem] p-8 md:p-10 flex flex-col justify-between aspect-square hover:-translate-y-1 transition-transform duration-300">
-                <TrendingUp className="text-[#2563EB]" size={32} />
-                <div className="mt-8">
-                  <h4 className="font-['Plus_Jakarta_Sans'] font-extrabold text-[12px] uppercase tracking-[0.2em] mb-2 text-[#0F172A]">
-                    ROI Real
-                  </h4>
-                  <p className="text-sm text-[#2563EB] leading-relaxed font-semibold italic">
-                    Pago único por su activo digital.
-                  </p>
+              <div className="bg-[#F8FAFC] border border-[#E2E8F0] rounded-[2rem] p-8 flex flex-col justify-between min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300">
+                <TrendingUp className="text-[#2563EB]" size={40} />
+                <div className="mt-6">
+                  <h4 className="font-['Plus_Jakarta_Sans'] font-extrabold text-base uppercase tracking-[0.2em] mb-3 text-[#0F172A]">ROI Real</h4>
+                  <p className="text-lg text-[#2563EB] leading-relaxed font-bold italic">Sin ataduras. Pago único real.</p>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

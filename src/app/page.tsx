@@ -4,6 +4,7 @@ import React from "react";
 // Importación exclusiva de las secciones de contenido
 import Hero from "./components/Hero";
 import Bento from "./components/Bento";
+import Process from "./components/Process"; // <-- NUEVO COMPONENTE IMPORTADO
 import Pricing from "./components/Pricing";
 import WhatsAppButton from "./components/WhatsAppButton";
 
@@ -17,6 +18,7 @@ export default function HomePage() {
       <main>
         <Hero />
         <Bento />
+        <Process /> {/* <-- RENDERIZADO ENTRE LA SOLUCIÓN Y EL PRECIO */}
         <Pricing />
         <WhatsAppButton/>
       </main>
