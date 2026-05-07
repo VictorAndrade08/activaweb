@@ -13,7 +13,8 @@ export default function Hero() {
         <div className="hidden lg:block absolute right-[-5%] top-[10%] w-[55%] pointer-events-none z-0">
           <img 
             src="https://pub-25cde2184a5249da96fa022aae951321.r2.dev/activaweb/hero.webp" 
-            alt="Fondo Infraestructura" 
+            alt="Fondo de Infraestructura Web" 
+            loading="eager"
             className="w-full h-auto rounded-[2rem] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.1)] -rotate-3 border border-gray-100 opacity-20" 
           />
         </div>
@@ -22,7 +23,7 @@ export default function Hero() {
           <div className="max-w-5xl">
             
             <div className="inline-flex items-center gap-2 bg-[#F0F5FF] text-[#2563EB] px-4 py-2 rounded-full text-[10px] md:text-[11px] font-bold uppercase tracking-widest mb-8 md:mb-10">
-              <Zap size={14} className="text-[#2563EB] fill-[#2563EB]" />
+              <Zap size={14} className="text-[#2563EB] fill-[#2563EB]" aria-hidden="true" />
               Activamos su presencia digital en 48 horas
             </div>
             
@@ -40,13 +41,16 @@ export default function Hero() {
                 
                 <a 
                   href="https://wa.me/593994715278?text=Hola%20Víctor,%20me%20gustaría%20saber%20si%20califico%20para%20el%20plan%20de%20$150" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Consultar Disponibilidad por WhatsApp"
                   className="w-full sm:w-auto flex items-center justify-center gap-3 bg-[#0F172A] text-white px-8 py-5 rounded-xl text-base md:text-lg font-extrabold hover:bg-[#1e293b] transition-all group shadow-xl shadow-slate-900/10 active:scale-95"
                 >
                   Consultar Disponibilidad
-                  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight size={20} aria-hidden="true" className="group-hover:translate-x-1 transition-transform" />
                 </a>
 
-                <div className="hidden sm:block h-12 w-[1px] bg-gray-200"></div>
+                <div className="hidden sm:block h-12 w-[1px] bg-gray-200" aria-hidden="true"></div>
 
                 <div className="flex items-center gap-4 sm:gap-0 sm:flex-col sm:items-start bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-white shadow-sm">
                   <span className="text-[#2563EB] font-['Plus_Jakarta_Sans'] font-extrabold text-4xl md:text-[44px] tracking-tighter leading-none">
@@ -58,9 +62,8 @@ export default function Hero() {
                 </div>
               </div>
               
-              {/* INYECCIÓN DEL NÚMERO: Genera confianza inmediata */}
               <div className="mt-4 flex items-center gap-2 text-sm font-semibold text-[#64748B]">
-                <ShieldCheck size={16} className="text-[#22C55E]" />
+                <ShieldCheck size={16} aria-hidden="true" className="text-[#22C55E]" />
                 Sin compromiso. Respondemos en WhatsApp (+593 99 471 5278) de inmediato.
               </div>
             </div>

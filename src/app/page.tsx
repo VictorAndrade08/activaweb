@@ -3,8 +3,9 @@ import React from "react";
 
 // Importación exclusiva de las secciones de contenido
 import Hero from "./components/Hero";
+import LogoTicker from "./components/LogoTicker"; // <-- IMPORTACIÓN DEL NUEVO COMPONENTE
 import Bento from "./components/Bento";
-import Process from "./components/Process"; // <-- NUEVO COMPONENTE IMPORTADO
+import Process from "./components/Process"; 
 import Pricing from "./components/Pricing";
 import WhatsAppButton from "./components/WhatsAppButton";
 
@@ -17,8 +18,9 @@ export default function HomePage() {
 
       <main>
         <Hero />
+        <LogoTicker /> {/* <-- RENDERIZADO ESTRATÉGICO PARA PRUEBA SOCIAL INMEDIATA */}
         <Bento />
-        <Process /> {/* <-- RENDERIZADO ENTRE LA SOLUCIÓN Y EL PRECIO */}
+        <Process /> 
         <Pricing />
         <WhatsAppButton/>
       </main>

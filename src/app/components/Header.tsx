@@ -26,6 +26,10 @@ const Header = () => {
     }
   };
 
+  const trackHeaderClick = () => {
+    console.log(`[Tracking Fantasma] Clic en Iniciar Proyecto (Header)`);
+  };
+
   const navLinks = [
     { name: 'Solución', href: '#solucion' },
     { name: 'Proceso', href: '#proceso' },
@@ -58,7 +62,6 @@ const Header = () => {
           </div>
 
           <div className="hidden lg:flex items-center gap-12">
-            {/* TEXTOS MÁS GRANDES: Pasó de text-[11px] a text-xs lg:text-sm y extra bold */}
             <div className="flex gap-10 text-xs lg:text-sm font-extrabold uppercase tracking-[0.2em] text-[#64748B]">
               {navLinks.map((link) => (
                 <a 
@@ -73,9 +76,11 @@ const Header = () => {
               ))}
             </div>
             
-            {/* TEXTO DE BOTÓN MÁS GRANDE */}
             <a 
               href="https://wa.me/593994715278?text=Hola%20Víctor,%20necesito%20un%20proyecto" 
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={trackHeaderClick}
               className="bg-[#2563EB] text-white px-8 py-3.5 rounded-lg text-xs font-black uppercase tracking-widest hover:bg-[#1d4ed8] hover:shadow-2xl hover:shadow-blue-500/30 transition-all active:scale-95 whitespace-nowrap"
             >
               Iniciar Proyecto
@@ -85,17 +90,20 @@ const Header = () => {
           <div className="flex lg:hidden items-center gap-3 relative z-[110]">
             <a 
               href="https://wa.me/593994715278"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Contactar por WhatsApp"
+              onClick={trackHeaderClick}
               className="bg-[#2563EB] text-white p-2.5 rounded-lg shadow-lg shadow-blue-500/20"
-              aria-label="WhatsApp"
             >
-              <MessageSquare size={20} />
+              <MessageSquare size={20} aria-hidden="true" />
             </a>
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-[#0F172A] p-1 focus:outline-none shrink-0"
               aria-label="Toggle Menu"
             >
-              {isMobileMenuOpen ? <X size={36} /> : <Menu size={36} />}
+              {isMobileMenuOpen ? <X size={36} aria-hidden="true" /> : <Menu size={36} aria-hidden="true" />}
             </button>
           </div>
         </div>
@@ -124,9 +132,12 @@ const Header = () => {
           <div className="mt-10 space-y-6 border-t border-gray-100 pt-10">
             <a 
               href="https://wa.me/593994715278"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={trackHeaderClick}
               className="flex items-center justify-center gap-3 w-full bg-[#0F172A] text-white py-6 rounded-2xl font-black text-2xl shadow-xl active:scale-95 transition-transform"
             >
-              <Zap size={28} className="fill-[#2563EB] text-[#2563EB]" />
+              <Zap size={28} className="fill-[#2563EB] text-[#2563EB]" aria-hidden="true" />
               Comenzar Ahora
             </a>
             <div className="flex justify-between items-center text-xs font-bold uppercase tracking-widest text-[#64748B]">
