@@ -17,10 +17,10 @@ export default function Pricing() {
         <div className="max-w-7xl mx-auto relative z-10">
           
           <div className="text-center mb-16 md:mb-20">
-            <h2 className="font-display text-5xl md:text-6xl font-extrabold text-[#0F172A] mb-6 tracking-tighter">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-6xl font-extrabold text-[#0F172A] mb-5 md:mb-6 leading-tight md:leading-none tracking-tight md:tracking-tighter">
               Inversión clara. <span className="text-[#2563EB]">Sin sorpresas.</span>
             </h2>
-            <p className="text-2xl text-[#64748B] max-w-2xl mx-auto font-semibold">
+            <p className="text-base md:text-2xl text-[#64748B] max-w-2xl mx-auto font-semibold">
               Todos nuestros planes son de pago único. Elija su velocidad de entrega.
             </p>
           </div>

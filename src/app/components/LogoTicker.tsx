@@ -14,37 +14,31 @@ export default function LogoTicker() {
   const duplicatedLogos = [...logos, ...logos];
 
   return (
-    <section className="py-16 md:py-20 lg:py-24 bg-white border-b border-gray-100 overflow-hidden antialiased">
+    <section className="py-10 md:py-14 lg:py-16 bg-white border-b border-gray-100 overflow-hidden antialiased">
         <div className="max-w-full mx-auto px-0">
-          
-          {/* AUMENTO DE TEXTO AQUI: 
-              Passou de text-[10px]/xs para text-sm (mobile), text-base (tablet) e text-lg (desktop). 
-              Também mudou para font-extrabold para ter mais presença visual. */}
-          <p className="text-center text-sm md:text-base lg:text-lg font-extrabold uppercase tracking-[0.2em] text-[#94A3B8] mb-12 md:mb-16 lg:mb-20 px-6">
+
+          <p className="text-center text-[11px] md:text-xs lg:text-sm font-extrabold uppercase tracking-[0.2em] text-[#94A3B8] mb-8 md:mb-10 lg:mb-12 px-6">
             Infraestructura confiable para firmas y consultorios de élite
           </p>
-          
-          {/* Contenedor del Carrusel - Ancho total ocultando el desbordamiento */}
-          <div className="relative w-full overflow-hidden flex">
-            
-            {/* Sombras de desvanecimiento laterales (Efecto difuminado en los bordes) */}
-            <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-            <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
-            {/* Pista del Carrusel (Track) */}
-            <div className="flex items-center w-max animate-carousel gap-16 md:gap-24 lg:gap-32 pl-16 md:pl-24 lg:pl-32">
+          <div className="relative w-full overflow-hidden flex">
+
+            <div className="absolute left-0 top-0 bottom-0 w-12 md:w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+            <div className="absolute right-0 top-0 bottom-0 w-12 md:w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+
+            <div className="flex items-center w-max animate-carousel gap-10 md:gap-16 lg:gap-20 pl-10 md:pl-16 lg:pl-20">
               {duplicatedLogos.map((src, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="flex items-center justify-center shrink-0"
                 >
-                  <img 
-                    src={src} 
-                    alt={`Firma Asociada ${index + 1}`} 
+                  <img
+                    src={src}
+                    alt={`Firma Asociada ${index + 1}`}
                     loading="lazy"
-                    className="h-20 md:h-28 lg:h-32 w-auto object-contain transition-all duration-500 ease-out
+                    className="h-10 md:h-14 lg:h-16 w-auto object-contain transition-all duration-500 ease-out
                                grayscale opacity-60 contrast-125 hover:grayscale-0 hover:opacity-100 hover:scale-110
-                               mix-blend-multiply cursor-default" 
+                               mix-blend-multiply cursor-default"
                   />
                 </div>
               ))}

@@ -20,13 +20,12 @@ export default function BentoGrid() {
                   <Layout size={26} className="text-[#2563EB]" />
                 </div>
                 
-                <h2 className="font-display text-5xl sm:text-6xl lg:text-[60px] font-extrabold mb-6 leading-[1.05] tracking-tighter text-[#0F172A]">
+                <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-extrabold mb-5 md:mb-6 leading-tight md:leading-[1.05] tracking-tight md:tracking-tighter text-[#0F172A]">
                   No deje que sus <br className="hidden md:block" />pacientes
                   se vayan al <span className="text-[#2563EB]">vecino.</span>
                 </h2>
-                
-                {/* TEXTO MÁS GRANDE: text-xl a text-2xl */}
-                <p className="text-xl md:text-2xl text-[#64748B] max-w-sm leading-relaxed font-semibold">
+
+                <p className="text-base md:text-2xl text-[#64748B] max-w-sm leading-relaxed font-semibold">
                   El 80% de los clientes abandonan un sitio si tarda más de 3 segundos en cargar. Su consultorio no puede permitirse tener una página lenta o caída.
                 </p>
               </div>
@@ -45,36 +44,36 @@ export default function BentoGrid() {
               <div className="absolute -right-24 -bottom-24 w-96 h-96 bg-[#EEF2FF] rounded-full pointer-events-none transition-transform duration-700 group-hover:scale-105" />
             </div>
 
-            <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="bg-white border border-gray-100 rounded-[2rem] p-8 flex flex-col justify-between min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300 shadow-sm">
-                <MapPin className="text-[#2563EB]" size={40} />
-                <div className="mt-6">
-                  <h4 className="font-display font-extrabold text-base uppercase tracking-[0.2em] mb-3 text-[#0F172A]">Google Maps</h4>
-                  <p className="text-lg text-[#64748B] leading-relaxed font-semibold">Sea el primero en su ciudad.</p>
+            <div className="lg:col-span-5 grid grid-cols-2 gap-3 md:gap-6">
+              <div className="bg-white border border-gray-100 rounded-2xl md:rounded-[2rem] p-5 md:p-8 flex flex-col justify-between min-h-[150px] md:min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300 shadow-sm">
+                <MapPin className="text-[#2563EB] w-7 h-7 md:w-10 md:h-10" />
+                <div className="mt-4 md:mt-6">
+                  <h4 className="font-display font-extrabold text-xs md:text-base uppercase tracking-[0.15em] md:tracking-[0.2em] mb-1.5 md:mb-3 text-[#0F172A]">Google Maps</h4>
+                  <p className="text-sm md:text-lg text-[#64748B] leading-snug md:leading-relaxed font-semibold">Sea el primero en su ciudad.</p>
                 </div>
               </div>
 
-              <div className="bg-white border border-gray-100 rounded-[2rem] p-8 flex flex-col justify-between min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300">
-                <MessageSquare className="text-[#2563EB]" size={40} />
-                <div className="mt-6">
-                  <h4 className="font-display font-extrabold text-base uppercase tracking-[0.2em] mb-3 text-[#0F172A]">WhatsApp</h4>
-                  <p className="text-lg text-[#64748B] leading-relaxed font-semibold">Pacientes directos a su celular.</p>
+              <div className="bg-white border border-gray-100 rounded-2xl md:rounded-[2rem] p-5 md:p-8 flex flex-col justify-between min-h-[150px] md:min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300 shadow-sm">
+                <MessageSquare className="text-[#2563EB] w-7 h-7 md:w-10 md:h-10" />
+                <div className="mt-4 md:mt-6">
+                  <h4 className="font-display font-extrabold text-xs md:text-base uppercase tracking-[0.15em] md:tracking-[0.2em] mb-1.5 md:mb-3 text-[#0F172A]">WhatsApp</h4>
+                  <p className="text-sm md:text-lg text-[#64748B] leading-snug md:leading-relaxed font-semibold">Pacientes directos a su celular.</p>
                 </div>
               </div>
 
-              <div className="bg-white border border-gray-100 rounded-[2rem] p-8 flex flex-col justify-between min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300">
-                <ShieldCheck className="text-[#2563EB]" size={40} />
-                <div className="mt-6">
-                  <h4 className="font-display font-extrabold text-base uppercase tracking-[0.2em] mb-3 text-[#0F172A]">Seguridad</h4>
-                  <p className="text-lg text-[#64748B] leading-relaxed font-semibold">Certificado SSL contra hackeos.</p>
+              <div className="bg-white border border-gray-100 rounded-2xl md:rounded-[2rem] p-5 md:p-8 flex flex-col justify-between min-h-[150px] md:min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300 shadow-sm">
+                <ShieldCheck className="text-[#2563EB] w-7 h-7 md:w-10 md:h-10" />
+                <div className="mt-4 md:mt-6">
+                  <h4 className="font-display font-extrabold text-xs md:text-base uppercase tracking-[0.15em] md:tracking-[0.2em] mb-1.5 md:mb-3 text-[#0F172A]">Seguridad</h4>
+                  <p className="text-sm md:text-lg text-[#64748B] leading-snug md:leading-relaxed font-semibold">Certificado SSL contra hackeos.</p>
                 </div>
               </div>
 
-              <div className="bg-[#F8FAFC] border border-[#E2E8F0] rounded-[2rem] p-8 flex flex-col justify-between min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300">
-                <TrendingUp className="text-[#2563EB]" size={40} />
-                <div className="mt-6">
-                  <h4 className="font-display font-extrabold text-base uppercase tracking-[0.2em] mb-3 text-[#0F172A]">ROI Real</h4>
-                  <p className="text-lg text-[#2563EB] leading-relaxed font-bold italic">Sin ataduras. Pago único real.</p>
+              <div className="bg-[#F8FAFC] border border-[#E2E8F0] rounded-2xl md:rounded-[2rem] p-5 md:p-8 flex flex-col justify-between min-h-[150px] md:min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300">
+                <TrendingUp className="text-[#2563EB] w-7 h-7 md:w-10 md:h-10" />
+                <div className="mt-4 md:mt-6">
+                  <h4 className="font-display font-extrabold text-xs md:text-base uppercase tracking-[0.15em] md:tracking-[0.2em] mb-1.5 md:mb-3 text-[#0F172A]">ROI Real</h4>
+                  <p className="text-sm md:text-lg text-[#2563EB] leading-snug md:leading-relaxed font-bold italic">Sin ataduras. Pago único real.</p>
                 </div>
               </div>
             </div>
