@@ -14,19 +14,19 @@ export default function LogoTicker() {
   const duplicatedLogos = [...logos, ...logos];
 
   return (
-    <section className="py-10 md:py-14 lg:py-16 bg-white border-b border-gray-100 overflow-hidden antialiased">
+    <section className="py-12 md:py-20 lg:py-28 bg-white border-b border-gray-100 overflow-hidden antialiased">
         <div className="max-w-full mx-auto px-0">
 
-          <p className="text-center text-[11px] md:text-xs lg:text-sm font-extrabold uppercase tracking-[0.2em] text-[#94A3B8] mb-8 md:mb-10 lg:mb-12 px-6">
+          <p className="text-center text-xs md:text-sm lg:text-base font-extrabold uppercase tracking-[0.2em] text-[#94A3B8] mb-10 md:mb-14 lg:mb-20 px-6">
             Infraestructura confiable para firmas y consultorios de élite
           </p>
 
           <div className="relative w-full overflow-hidden flex">
 
-            <div className="absolute left-0 top-0 bottom-0 w-12 md:w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-            <div className="absolute right-0 top-0 bottom-0 w-12 md:w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+            <div className="absolute left-0 top-0 bottom-0 w-12 md:w-32 lg:w-48 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+            <div className="absolute right-0 top-0 bottom-0 w-12 md:w-32 lg:w-48 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
-            <div className="flex items-center w-max animate-carousel gap-10 md:gap-16 lg:gap-20 pl-10 md:pl-16 lg:pl-20">
+            <div className="flex items-center w-max animate-carousel gap-10 md:gap-20 lg:gap-32 pl-10 md:pl-20 lg:pl-32">
               {duplicatedLogos.map((src, index) => (
                 <div
                   key={index}
@@ -36,8 +36,8 @@ export default function LogoTicker() {
                     src={src}
                     alt={`Firma Asociada ${index + 1}`}
                     loading="lazy"
-                    className="h-10 md:h-14 lg:h-16 w-auto object-contain transition-all duration-500 ease-out
-                               grayscale opacity-60 contrast-125 hover:grayscale-0 hover:opacity-100 hover:scale-110
+                    className="h-12 md:h-20 lg:h-28 w-auto object-contain transition-all duration-500 ease-out
+                               grayscale opacity-70 contrast-125 hover:grayscale-0 hover:opacity-100 hover:scale-110
                                mix-blend-multiply cursor-default"
                   />
                 </div>
