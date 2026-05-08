@@ -1,16 +1,19 @@
-import React from 'react';
+import Image from 'next/image';
 import { Zap, ArrowRight, ShieldCheck } from 'lucide-react';
 
 export default function Hero() {
   return (
     <section className="relative pt-24 pb-16 md:pt-32 md:pb-32 px-6 sm:px-8 overflow-hidden antialiased">
-        
+
         <div className="hidden lg:block absolute right-[-5%] top-[10%] w-[55%] pointer-events-none z-0">
-          <img 
-            src="https://pub-25cde2184a5249da96fa022aae951321.r2.dev/activaweb/hero.webp" 
-            alt="Fondo de Infraestructura Web" 
-            loading="eager"
-            className="w-full h-auto rounded-[2rem] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.1)] -rotate-3 border border-gray-100 opacity-20" 
+          <Image
+            src="https://pub-25cde2184a5249da96fa022aae951321.r2.dev/activaweb/hero.webp"
+            alt="Fondo de Infraestructura Web"
+            width={1200}
+            height={750}
+            priority
+            sizes="55vw"
+            className="w-full h-auto rounded-[2rem] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.1)] -rotate-3 border border-gray-100 opacity-20"
           />
         </div>
 

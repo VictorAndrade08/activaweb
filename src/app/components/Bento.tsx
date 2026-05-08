@@ -1,4 +1,4 @@
-import React from 'react';
+import Image from 'next/image';
 import { MapPin, MessageSquare, ShieldCheck, TrendingUp, Layout, Cpu } from 'lucide-react';
 
 export default function BentoGrid() {
@@ -9,10 +9,14 @@ export default function BentoGrid() {
             
             <div className="lg:col-span-7 bg-[#F8FAFC] rounded-[2.5rem] p-8 md:p-14 lg:p-16 border border-gray-100 flex flex-col justify-between overflow-hidden relative group">
               
-              <img 
-                src="https://pub-25cde2184a5249da96fa022aae951321.r2.dev/activaweb/cozy.webp" 
-                alt="Usuario" 
-                className="hidden md:block absolute right-0 bottom-0 h-[100%] w-[55%] object-cover object-left-top opacity-20 rounded-tl-[3rem] transition-transform duration-700 group-hover:scale-[1.02] pointer-events-none z-0" 
+              <Image
+                src="https://pub-25cde2184a5249da96fa022aae951321.r2.dev/activaweb/cozy.webp"
+                alt=""
+                width={800}
+                height={1000}
+                sizes="(max-width: 768px) 0px, 50vw"
+                loading="lazy"
+                className="hidden md:block absolute right-0 bottom-0 h-full w-[55%] object-cover object-left-top opacity-20 rounded-tl-[3rem] transition-transform duration-700 group-hover:scale-[1.02] pointer-events-none z-0"
               />
 
               <div className="relative z-10 md:w-[70%]">
@@ -48,7 +52,7 @@ export default function BentoGrid() {
               <div className="bg-white border border-gray-100 rounded-2xl md:rounded-[2rem] p-5 md:p-8 flex flex-col justify-between min-h-[150px] md:min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300 shadow-sm">
                 <MapPin className="text-[#2563EB] w-7 h-7 md:w-10 md:h-10" />
                 <div className="mt-4 md:mt-6">
-                  <h4 className="font-display font-extrabold text-xs md:text-base uppercase tracking-[0.15em] md:tracking-[0.2em] mb-1.5 md:mb-3 text-[#0F172A]">Google Maps</h4>
+                  <h3 className="font-display font-extrabold text-xs md:text-base uppercase tracking-[0.15em] md:tracking-[0.2em] mb-1.5 md:mb-3 text-[#0F172A]">Google Maps</h3>
                   <p className="text-sm md:text-lg text-[#64748B] leading-snug md:leading-relaxed font-semibold">Sea el primero en su ciudad.</p>
                 </div>
               </div>
@@ -56,7 +60,7 @@ export default function BentoGrid() {
               <div className="bg-white border border-gray-100 rounded-2xl md:rounded-[2rem] p-5 md:p-8 flex flex-col justify-between min-h-[150px] md:min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300 shadow-sm">
                 <MessageSquare className="text-[#2563EB] w-7 h-7 md:w-10 md:h-10" />
                 <div className="mt-4 md:mt-6">
-                  <h4 className="font-display font-extrabold text-xs md:text-base uppercase tracking-[0.15em] md:tracking-[0.2em] mb-1.5 md:mb-3 text-[#0F172A]">WhatsApp</h4>
+                  <h3 className="font-display font-extrabold text-xs md:text-base uppercase tracking-[0.15em] md:tracking-[0.2em] mb-1.5 md:mb-3 text-[#0F172A]">WhatsApp</h3>
                   <p className="text-sm md:text-lg text-[#64748B] leading-snug md:leading-relaxed font-semibold">Pacientes directos a su celular.</p>
                 </div>
               </div>
@@ -64,7 +68,7 @@ export default function BentoGrid() {
               <div className="bg-white border border-gray-100 rounded-2xl md:rounded-[2rem] p-5 md:p-8 flex flex-col justify-between min-h-[150px] md:min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300 shadow-sm">
                 <ShieldCheck className="text-[#2563EB] w-7 h-7 md:w-10 md:h-10" />
                 <div className="mt-4 md:mt-6">
-                  <h4 className="font-display font-extrabold text-xs md:text-base uppercase tracking-[0.15em] md:tracking-[0.2em] mb-1.5 md:mb-3 text-[#0F172A]">Seguridad</h4>
+                  <h3 className="font-display font-extrabold text-xs md:text-base uppercase tracking-[0.15em] md:tracking-[0.2em] mb-1.5 md:mb-3 text-[#0F172A]">Seguridad</h3>
                   <p className="text-sm md:text-lg text-[#64748B] leading-snug md:leading-relaxed font-semibold">Certificado SSL contra hackeos.</p>
                 </div>
               </div>
@@ -72,7 +76,7 @@ export default function BentoGrid() {
               <div className="bg-[#F8FAFC] border border-[#E2E8F0] rounded-2xl md:rounded-[2rem] p-5 md:p-8 flex flex-col justify-between min-h-[150px] md:min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300">
                 <TrendingUp className="text-[#2563EB] w-7 h-7 md:w-10 md:h-10" />
                 <div className="mt-4 md:mt-6">
-                  <h4 className="font-display font-extrabold text-xs md:text-base uppercase tracking-[0.15em] md:tracking-[0.2em] mb-1.5 md:mb-3 text-[#0F172A]">ROI Real</h4>
+                  <h3 className="font-display font-extrabold text-xs md:text-base uppercase tracking-[0.15em] md:tracking-[0.2em] mb-1.5 md:mb-3 text-[#0F172A]">ROI Real</h3>
                   <p className="text-sm md:text-lg text-[#2563EB] leading-snug md:leading-relaxed font-bold italic">Sin ataduras. Pago único real.</p>
                 </div>
               </div>

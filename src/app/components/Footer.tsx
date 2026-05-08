@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { MapPin, Zap, ShieldCheck } from 'lucide-react';
 
 export default function Footer() {
@@ -12,9 +13,12 @@ export default function Footer() {
             
             <div className="md:col-span-5 flex flex-col items-center md:items-start text-center md:text-left">
               <a href="#" className="inline-block mb-6 group">
-                <img 
+                <Image
                   src="https://pub-25cde2184a5249da96fa022aae951321.r2.dev/activaweb/activaweblogofinal.svg"
-                  alt="ActivaWeb Logo" 
+                  alt="ActivaWeb Logo"
+                  width={180}
+                  height={56}
+                  unoptimized
                   className="h-12 md:h-14 w-auto transition-transform duration-300 group-hover:scale-105"
                 />
               </a>
@@ -33,9 +37,9 @@ export default function Footer() {
             </div>
 
             <div className="md:col-span-3 flex flex-col items-center md:items-start">
-              <h4 className="font-display text-base font-extrabold uppercase tracking-[0.2em] text-[#0F172A] mb-8">
+              <h3 className="font-display text-base font-extrabold uppercase tracking-[0.2em] text-[#0F172A] mb-8">
                 Cobertura
-              </h4>
+              </h3>
               <div className="grid grid-cols-2 gap-x-8 gap-y-6">
                 {['Ambato', 'Quito', 'Guayaquil', 'Cuenca'].map((city) => (
                   <div key={city} className="flex items-center gap-3 group cursor-default">
@@ -49,9 +53,9 @@ export default function Footer() {
             </div>
 
             <div className="md:col-span-4 flex flex-col items-center md:items-end text-center md:text-right">
-              <h4 className="font-display text-base font-extrabold uppercase tracking-[0.2em] text-[#0F172A] mb-8">
+              <h3 className="font-display text-base font-extrabold uppercase tracking-[0.2em] text-[#0F172A] mb-8">
                 Infraestructura
-              </h4>
+              </h3>
               <div className="flex flex-col gap-4 w-full max-w-[280px]">
 
                 <div className="flex items-center gap-4 bg-white border border-gray-200 px-5 py-4 rounded-xl shadow-sm hover:border-[#22C55E] hover:shadow-md transition-all">

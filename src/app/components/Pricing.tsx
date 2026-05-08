@@ -1,6 +1,6 @@
 "use client";
-import React from 'react';
-import { CheckCircle2, ArrowRight, Building2, Clock, Zap, MessageCircle, MessageSquare } from 'lucide-react';
+import Image from 'next/image';
+import { CheckCircle2, ArrowRight, Building2, Zap, MessageCircle, MessageSquare } from 'lucide-react';
 
 export default function Pricing() {
   // Función de Tracking Fantasma para tu base de datos
@@ -131,20 +131,26 @@ export default function Pricing() {
 
           <div id="proceso" className="mt-24 relative pt-10 -mt-10">
             <div className="hidden lg:block absolute left-[5%] top-[-15%] w-72 z-0 opacity-40">
-               <img 
-                 src="https://pub-25cde2184a5249da96fa022aae951321.r2.dev/activaweb/proud.webp" 
-                 alt="Plantilla Web Abogados" 
+               <Image
+                 src="https://pub-25cde2184a5249da96fa022aae951321.r2.dev/activaweb/proud.webp"
+                 alt=""
+                 width={288}
+                 height={400}
+                 sizes="288px"
                  loading="lazy"
-                 className="w-full h-auto rounded-2xl shadow-2xl -rotate-6" 
+                 className="w-full h-auto rounded-2xl shadow-2xl -rotate-6"
                />
             </div>
-            
+
             <div className="hidden lg:block absolute right-[5%] bottom-[-10%] w-72 z-0 opacity-40">
-               <img 
-                 src="https://pub-25cde2184a5249da96fa022aae951321.r2.dev/activaweb/success.webp" 
-                 alt="Plantilla Web Médicos" 
+               <Image
+                 src="https://pub-25cde2184a5249da96fa022aae951321.r2.dev/activaweb/success.webp"
+                 alt=""
+                 width={288}
+                 height={400}
+                 sizes="288px"
                  loading="lazy"
-                 className="w-full h-auto rounded-2xl shadow-2xl rotate-6" 
+                 className="w-full h-auto rounded-2xl shadow-2xl rotate-6"
                />
             </div>
 
@@ -156,9 +162,9 @@ export default function Pricing() {
                   <Building2 size={40} aria-hidden="true" className="text-[#2563EB]" />
                 </div>
                 <div>
-                  <h4 className="font-display text-3xl md:text-4xl font-extrabold text-white mb-4">
+                  <h3 className="font-display text-3xl md:text-4xl font-extrabold text-white mb-4">
                     ¿Necesita un sistema a medida?
-                  </h4>
+                  </h3>
                   <p className="text-xl text-[#94A3B8] font-medium max-w-xl">
                     Portales de pacientes, intranets legales o aplicaciones web complejas. Desarrollamos soluciones escalables de alto nivel.
                   </p>

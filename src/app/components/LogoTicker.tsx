@@ -1,4 +1,4 @@
-import React from 'react';
+import Image from "next/image";
 
 export default function LogoTicker() {
   const logos = [
@@ -10,7 +10,6 @@ export default function LogoTicker() {
     "https://pub-25cde2184a5249da96fa022aae951321.r2.dev/activaweb/7_result.webp"
   ];
 
-  // TRUCO UX: Duplicamos el array de logos para crear el efecto infinito sin cortes
   const duplicatedLogos = [...logos, ...logos];
 
   return (
@@ -32,9 +31,12 @@ export default function LogoTicker() {
                   key={index}
                   className="flex items-center justify-center shrink-0"
                 >
-                  <img
+                  <Image
                     src={src}
                     alt={`Firma Asociada ${index + 1}`}
+                    width={220}
+                    height={120}
+                    sizes="(max-width: 768px) 90px, (max-width: 1024px) 150px, 220px"
                     loading="lazy"
                     className="h-12 md:h-20 lg:h-28 w-auto object-contain transition-all duration-500 ease-out
                                grayscale opacity-70 contrast-125 hover:grayscale-0 hover:opacity-100 hover:scale-110

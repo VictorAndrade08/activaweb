@@ -230,7 +230,7 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning className={`${inter.variable} ${plusJakarta.variable}`}>
       <head>
-        <link rel="preconnect" href="https://pub-25cde2184a5249da96fa022aae951321.r2.dev" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://pub-25cde2184a5249da96fa022aae951321.r2.dev" />
         <link rel="dns-prefetch" href="https://pub-25cde2184a5249da96fa022aae951321.r2.dev" />
         <script
           type="application/ld+json"

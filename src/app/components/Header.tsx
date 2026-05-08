@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { Menu, X, MessageSquare, Zap } from 'lucide-react';
 
 const Header = () => {
@@ -48,10 +49,14 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
           
           <div className="flex items-center group cursor-pointer relative z-[110]">
-            <img 
+            <Image
               src="https://pub-25cde2184a5249da96fa022aae951321.r2.dev/activaweb/activaweblogofinal.svg"
-              alt="ActivaWeb Logo" 
-              className={`transition-all duration-300 object-contain ${
+              alt="ActivaWeb Logo"
+              width={180}
+              height={56}
+              priority
+              unoptimized
+              className={`transition-all duration-300 object-contain w-auto ${
                 isScrolled ? 'h-8 md:h-10' : 'h-10 md:h-14'
               } group-hover:scale-105`}
             />
