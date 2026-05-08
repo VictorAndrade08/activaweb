@@ -53,7 +53,7 @@ const Header = () => {
           
           <div className="flex items-center group cursor-pointer relative z-[110]">
             <img 
-              src="https://capitalstudioec.com/wp-content/uploads/activa-web.png" 
+              src="https://pub-25cde2184a5249da96fa022aae951321.r2.dev/activaweb/activaweblogofinal.svg"
               alt="ActivaWeb Logo" 
               className={`transition-all duration-300 object-contain ${
                 isScrolled ? 'h-8 md:h-10' : 'h-10 md:h-14'
@@ -77,7 +77,7 @@ const Header = () => {
             </div>
             
             <a 
-              href="https://wa.me/593994715278?text=Hola%20Víctor,%20necesito%20un%20proyecto" 
+              href="https://wa.me/593994715278?text=Hola,%20necesito%20un%20proyecto"
               target="_blank"
               rel="noopener noreferrer"
               onClick={trackHeaderClick}

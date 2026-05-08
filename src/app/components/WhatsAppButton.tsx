@@ -4,7 +4,7 @@ import { MessageSquare, Clock } from 'lucide-react';
 
 const WhatsAppButton = () => {
   const phoneNumber = "593994715278";
-  const message = "Hola Víctor, me interesa obtener más información sobre los planes de ActivaWeb.";
+  const message = "Hola, me interesa obtener más información sobre los planes de ActivaWeb.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   const trackFloatingClick = () => {

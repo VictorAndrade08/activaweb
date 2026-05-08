@@ -40,7 +40,7 @@ export default function Hero() {
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 md:gap-10">
                 
                 <a 
-                  href="https://wa.me/593994715278?text=Hola%20Víctor,%20me%20gustaría%20saber%20si%20califico%20para%20el%20plan%20de%20$150" 
+                  href="https://wa.me/593994715278?text=Hola,%20me%20gustaría%20saber%20si%20califico%20para%20el%20plan%20de%20$150" 
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Consultar Disponibilidad por WhatsApp"

@@ -18,7 +18,7 @@ export default function Footer() {
             <div className="md:col-span-5 flex flex-col items-center md:items-start text-center md:text-left">
               <a href="#" className="inline-block mb-6 group">
                 <img 
-                  src="https://capitalstudioec.com/wp-content/uploads/activa-web.png" 
+                  src="https://pub-25cde2184a5249da96fa022aae951321.r2.dev/activaweb/activaweblogofinal.svg"
                   alt="ActivaWeb Logo" 
                   className="h-12 md:h-14 w-auto transition-transform duration-300 group-hover:scale-105"
                 />

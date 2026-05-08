@@ -52,7 +52,7 @@ export default function Pricing() {
               </div>
 
               <a 
-                href="https://wa.me/593994715278?text=Hola%20Víctor,%20me%20gustaría%20hacerte%20unas%20preguntas%20sobre%20el%20plan%20Business%20Pro%20de%20$300" 
+                href="https://wa.me/593994715278?text=Hola,%20me%20gustaría%20hacerte%20unas%20preguntas%20sobre%20el%20plan%20Business%20Pro%20de%20$300" 
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackIntent('Business Pro $300')}
@@ -90,7 +90,7 @@ export default function Pricing() {
               </div>
 
               <a 
-                href="https://wa.me/593994715278?text=Hola%20Víctor,%20quisiera%20saber%20si%20mi%20clínica%20aplica%20para%20la%20web%20de%20$150%20con%20entrega%20hoy" 
+                href="https://wa.me/593994715278?text=Hola,%20quisiera%20saber%20si%20mi%20clínica%20aplica%20para%20la%20web%20de%20$150%20con%20entrega%20hoy" 
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackIntent('Profesional $150')}
@@ -121,7 +121,7 @@ export default function Pricing() {
               </div>
 
               <a 
-                href="https://wa.me/593994715278?text=Hola%20Víctor,%20necesito%20detalles%20del%20plan%20Elite%20para%20mi%20negocio" 
+                href="https://wa.me/593994715278?text=Hola,%20necesito%20detalles%20del%20plan%20Elite%20para%20mi%20negocio" 
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackIntent('Elite Corporativo $450')}
@@ -171,7 +171,7 @@ export default function Pricing() {
               </div>
 
               <a 
-                href="https://wa.me/593994715278?text=Hola%20Víctor,%20tengo%20un%20proyecto%20complejo%20y%20necesito%20cotizarlo%20a%20medida" 
+                href="https://wa.me/593994715278?text=Hola,%20tengo%20un%20proyecto%20complejo%20y%20necesito%20cotizarlo%20a%20medida" 
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackIntent('Proyecto A Medida')}
