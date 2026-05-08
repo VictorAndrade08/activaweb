@@ -38,12 +38,8 @@ const Header = () => {
 
   return (
     <>
-      <style dangerouslySetInnerHTML={{ __html: `
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
-      `}} />
-
-      <nav 
-        className={`fixed top-0 w-full z-[100] transition-all duration-500 font-['Inter'] ${
+      <nav
+        className={`fixed top-0 w-full z-[100] transition-all duration-500 ${
           isScrolled 
             ? 'bg-white/90 backdrop-blur-xl border-b border-gray-100 py-3 shadow-sm' 
             : 'bg-transparent py-6 md:py-8'
@@ -122,7 +118,7 @@ const Header = () => {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="block text-6xl font-['Plus_Jakarta_Sans'] font-extrabold tracking-tighter text-[#0F172A] hover:text-[#2563EB] transition-colors"
+                className="block text-6xl font-display font-extrabold tracking-tighter text-[#0F172A] hover:text-[#2563EB] transition-colors"
               >
                 {link.name}
               </a>

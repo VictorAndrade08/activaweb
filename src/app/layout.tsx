@@ -1,32 +1,35 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
+  variable: "--font-plus-jakarta",
+  display: "swap",
+  weight: ["700", "800"],
 });
 
-// Metadatos nivel 2026 para dominar al compartir links por WhatsApp/LinkedIn
 export const metadata: Metadata = {
   title: "ActivaWeb | Páginas Web para Abogados y Médicos",
   description: "Desarrollamos infraestructura web de alto rendimiento y carga instantánea en Ecuador. Planes sin suscripciones eternas.",
   openGraph: {
     title: "ActivaWeb | Tecnología Ágil para su Prestigio",
     description: "Páginas web ultra rápidas para captar pacientes y clientes reales. Pago único, sin sorpresas.",
-    url: "https://activaweb.com", // Cambiar por tu dominio real
+    url: "https://activawebpro.com",
     siteName: "ActivaWeb",
     images: [
       {
-        url: "https://pub-25cde2184a5249da96fa022aae951321.r2.dev/activaweb/hero.webp", // Imagen por defecto al compartir
+        url: "https://pub-25cde2184a5249da96fa022aae951321.r2.dev/activaweb/hero.webp",
         width: 1200,
         height: 630,
         alt: "ActivaWeb Infraestructura Web",
@@ -47,12 +50,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Schema Markup inyectado para SEO Local en Ambato y posicionamiento de servicios
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "ActivaWeb",
-    "image": "https://capitalstudioec.com/wp-content/uploads/activa-web.png",
+    "image": "https://pub-25cde2184a5249da96fa022aae951321.r2.dev/activaweb/activaweblogofinal.svg",
     "description": "Desarrollamos infraestructura web de carga instantánea enfocada en la captación de clientes para profesionales exigentes en Ecuador.",
     "address": {
       "@type": "PostalAddress",
@@ -62,20 +64,20 @@ export default function RootLayout({
     "telephone": "+593994715278",
     "priceRange": "$150 - $450",
     "areaServed": ["Ambato", "Quito", "Guayaquil", "Cuenca"],
-    "url": "https://activaweb.com"
+    "url": "https://activawebpro.com"
   };
 
   return (
-    <html lang="es" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning className={`${inter.variable} ${plusJakarta.variable}`}>
       <head>
+        <link rel="preconnect" href="https://pub-25cde2184a5249da96fa022aae951321.r2.dev" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://pub-25cde2184a5249da96fa022aae951321.r2.dev" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-black`}
-      >
+      <body className="antialiased bg-white text-black">
         <Header />
         <main>{children}</main>
         <Footer />

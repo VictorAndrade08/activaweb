@@ -14,28 +14,7 @@ export default function LogoTicker() {
   const duplicatedLogos = [...logos, ...logos];
 
   return (
-    <>
-      <style dangerouslySetInnerHTML={{ __html: `
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
-        
-        /* Animación del Carrusel Infinito */
-        @keyframes slide {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        
-        .animate-carousel {
-          /* 35 segundos para un movimiento elegante y que permita lectura */
-          animation: slide 35s linear infinite;
-        }
-        
-        /* Pausa la animación si el usuario pone el mouse encima */
-        .animate-carousel:hover {
-          animation-play-state: paused;
-        }
-      `}} />
-
-      <section className="py-16 md:py-20 lg:py-24 bg-white border-b border-gray-100 overflow-hidden font-['Inter'] antialiased">
+    <section className="py-16 md:py-20 lg:py-24 bg-white border-b border-gray-100 overflow-hidden antialiased">
         <div className="max-w-full mx-auto px-0">
           
           {/* AUMENTO DE TEXTO AQUI: 
@@ -73,7 +52,6 @@ export default function LogoTicker() {
           </div>
 
         </div>
-      </section>
-    </>
+    </section>
   );
 }

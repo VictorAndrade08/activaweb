@@ -3,12 +3,7 @@ import { MapPin, MessageSquare, ShieldCheck, TrendingUp, Layout, Cpu } from 'luc
 
 export default function BentoGrid() {
   return (
-    <>
-      <style dangerouslySetInnerHTML={{ __html: `
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
-      `}} />
-
-      <section id="solucion" className="py-16 md:py-32 px-6 sm:px-8 bg-white font-['Inter'] antialiased">
+    <section id="solucion" className="py-16 md:py-32 px-6 sm:px-8 bg-white antialiased">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-6">
             
@@ -25,7 +20,7 @@ export default function BentoGrid() {
                   <Layout size={26} className="text-[#2563EB]" />
                 </div>
                 
-                <h2 className="font-['Plus_Jakarta_Sans'] text-5xl sm:text-6xl lg:text-[60px] font-extrabold mb-6 leading-[1.05] tracking-tighter text-[#0F172A]">
+                <h2 className="font-display text-5xl sm:text-6xl lg:text-[60px] font-extrabold mb-6 leading-[1.05] tracking-tighter text-[#0F172A]">
                   No deje que sus <br className="hidden md:block" />pacientes
                   se vayan al <span className="text-[#2563EB]">vecino.</span>
                 </h2>
@@ -55,7 +50,7 @@ export default function BentoGrid() {
                 <MapPin className="text-[#2563EB]" size={40} />
                 <div className="mt-6">
                   {/* TEXTOS MÁS GRANDES EN TARJETAS */}
-                  <h4 className="font-['Plus_Jakarta_Sans'] font-extrabold text-base uppercase tracking-[0.2em] mb-3 text-white">Google Maps</h4>
+                  <h4 className="font-display font-extrabold text-base uppercase tracking-[0.2em] mb-3 text-white">Google Maps</h4>
                   <p className="text-lg text-[#94A3B8] leading-relaxed font-semibold">Sea el primero en su ciudad.</p>
                 </div>
               </div>
@@ -63,7 +58,7 @@ export default function BentoGrid() {
               <div className="bg-white border border-gray-100 rounded-[2rem] p-8 flex flex-col justify-between min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300">
                 <MessageSquare className="text-[#2563EB]" size={40} />
                 <div className="mt-6">
-                  <h4 className="font-['Plus_Jakarta_Sans'] font-extrabold text-base uppercase tracking-[0.2em] mb-3 text-[#0F172A]">WhatsApp</h4>
+                  <h4 className="font-display font-extrabold text-base uppercase tracking-[0.2em] mb-3 text-[#0F172A]">WhatsApp</h4>
                   <p className="text-lg text-[#64748B] leading-relaxed font-semibold">Pacientes directos a su celular.</p>
                 </div>
               </div>
@@ -71,7 +66,7 @@ export default function BentoGrid() {
               <div className="bg-white border border-gray-100 rounded-[2rem] p-8 flex flex-col justify-between min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300">
                 <ShieldCheck className="text-[#2563EB]" size={40} />
                 <div className="mt-6">
-                  <h4 className="font-['Plus_Jakarta_Sans'] font-extrabold text-base uppercase tracking-[0.2em] mb-3 text-[#0F172A]">Seguridad</h4>
+                  <h4 className="font-display font-extrabold text-base uppercase tracking-[0.2em] mb-3 text-[#0F172A]">Seguridad</h4>
                   <p className="text-lg text-[#64748B] leading-relaxed font-semibold">Certificado SSL contra hackeos.</p>
                 </div>
               </div>
@@ -79,14 +74,13 @@ export default function BentoGrid() {
               <div className="bg-[#F8FAFC] border border-[#E2E8F0] rounded-[2rem] p-8 flex flex-col justify-between min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300">
                 <TrendingUp className="text-[#2563EB]" size={40} />
                 <div className="mt-6">
-                  <h4 className="font-['Plus_Jakarta_Sans'] font-extrabold text-base uppercase tracking-[0.2em] mb-3 text-[#0F172A]">ROI Real</h4>
+                  <h4 className="font-display font-extrabold text-base uppercase tracking-[0.2em] mb-3 text-[#0F172A]">ROI Real</h4>
                   <p className="text-lg text-[#2563EB] leading-relaxed font-bold italic">Sin ataduras. Pago único real.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </>
+    </section>
   );
 }

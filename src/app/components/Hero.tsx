@@ -3,12 +3,7 @@ import { Zap, ArrowRight, ShieldCheck } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <>
-      <style dangerouslySetInnerHTML={{ __html: `
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
-      `}} />
-
-      <section className="relative pt-24 pb-16 md:pt-32 md:pb-32 px-6 sm:px-8 overflow-hidden font-['Inter'] antialiased">
+    <section className="relative pt-24 pb-16 md:pt-32 md:pb-32 px-6 sm:px-8 overflow-hidden antialiased">
         
         <div className="hidden lg:block absolute right-[-5%] top-[10%] w-[55%] pointer-events-none z-0">
           <img 
@@ -27,7 +22,7 @@ export default function Hero() {
               Activamos su presencia digital en 48 horas
             </div>
             
-            <h1 className="font-['Plus_Jakarta_Sans'] text-5xl sm:text-6xl md:text-7xl lg:text-[84px] font-extrabold leading-[1.05] md:leading-[0.95] text-[#0F172A] mb-6 md:mb-8 tracking-tighter relative z-20">
+            <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[84px] font-extrabold leading-[1.05] md:leading-[0.95] text-[#0F172A] mb-6 md:mb-8 tracking-tighter relative z-20">
               Su prestigio merece una <br className="hidden md:block" /> 
               web con <span className="text-[#2563EB]">tecnología ágil.</span>
             </h1>
@@ -53,7 +48,7 @@ export default function Hero() {
                 <div className="hidden sm:block h-12 w-[1px] bg-gray-200" aria-hidden="true"></div>
 
                 <div className="flex items-center gap-4 sm:gap-0 sm:flex-col sm:items-start bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-white shadow-sm">
-                  <span className="text-[#2563EB] font-['Plus_Jakarta_Sans'] font-extrabold text-4xl md:text-[44px] tracking-tighter leading-none">
+                  <span className="text-[#2563EB] font-display font-extrabold text-4xl md:text-[44px] tracking-tighter leading-none">
                     100/100
                   </span>
                   <span className="text-[9px] md:text-[10px] text-[#64748B] font-bold uppercase tracking-[0.2em] mt-1 sm:mt-2">
@@ -70,7 +65,6 @@ export default function Hero() {
 
           </div>
         </div>
-      </section>
-    </>
+    </section>
   );
 }

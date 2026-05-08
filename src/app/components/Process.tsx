@@ -3,17 +3,11 @@ import { MessageSquare, Send, Zap } from 'lucide-react';
 
 export default function Process() {
   return (
-    <>
-      <style dangerouslySetInnerHTML={{ __html: `
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
-      `}} />
-
-      {/* AQUÍ ESTÁ EL ID="proceso" PARA QUE EL MENÚ TE DIRIJA EXACTAMENTE AQUÍ */}
-      <section id="proceso" className="py-20 md:py-32 px-6 sm:px-8 bg-white relative overflow-hidden font-['Inter'] antialiased">
+    <section id="proceso" className="py-20 md:py-32 px-6 sm:px-8 bg-white relative overflow-hidden antialiased">
         <div className="max-w-7xl mx-auto relative z-10">
           
           <div className="text-center mb-16 md:mb-20">
-            <h2 className="font-['Plus_Jakarta_Sans'] text-5xl md:text-6xl font-extrabold text-[#0F172A] mb-6 tracking-tighter">
+            <h2 className="font-display text-5xl md:text-6xl font-extrabold text-[#0F172A] mb-6 tracking-tighter">
               Un proceso <span className="text-[#2563EB]">sin fricción.</span>
             </h2>
             <p className="text-2xl text-[#64748B] max-w-2xl mx-auto font-semibold">
@@ -28,7 +22,7 @@ export default function Process() {
               <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm border border-gray-100 text-[#2563EB]">
                 <MessageSquare size={36} />
               </div>
-              <h3 className="font-['Plus_Jakarta_Sans'] text-3xl font-extrabold text-[#0F172A] mb-4">1. Escribe</h3>
+              <h3 className="font-display text-3xl font-extrabold text-[#0F172A] mb-4">1. Escribe</h3>
               <p className="text-lg text-[#64748B] font-medium leading-relaxed">
                 Haga clic en cualquier botón de esta página para iniciar un chat directo por WhatsApp con nuestro equipo.
               </p>
@@ -39,7 +33,7 @@ export default function Process() {
               <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm border border-gray-100 text-[#2563EB]">
                 <Send size={36} />
               </div>
-              <h3 className="font-['Plus_Jakarta_Sans'] text-3xl font-extrabold text-[#0F172A] mb-4">2. Envía la Información</h3>
+              <h3 className="font-display text-3xl font-extrabold text-[#0F172A] mb-4">2. Envía la Información</h3>
               <p className="text-lg text-[#64748B] font-medium leading-relaxed">
                 Compártanos su logotipo, fotos de su consultorio y los servicios o especialidades que ofrece.
               </p>
@@ -50,7 +44,7 @@ export default function Process() {
               <div className="w-20 h-20 bg-[#2563EB] rounded-2xl flex items-center justify-center mb-8 shadow-md text-white">
                 <Zap size={36} className="fill-current" />
               </div>
-              <h3 className="font-['Plus_Jakarta_Sans'] text-3xl font-extrabold text-[#2563EB] mb-4">3. Paga y Revisa</h3>
+              <h3 className="font-display text-3xl font-extrabold text-[#2563EB] mb-4">3. Paga y Revisa</h3>
               <p className="text-lg text-[#0F172A] font-bold leading-relaxed">
                 Realice su pago único y reciba su sitio web 100% optimizado y publicado en menos de 48 horas.
               </p>
@@ -58,7 +52,6 @@ export default function Process() {
 
           </div>
         </div>
-      </section>
-    </>
+    </section>
   );
 }

@@ -11,18 +11,13 @@ export default function Pricing() {
   };
 
   return (
-    <>
-      <style dangerouslySetInnerHTML={{ __html: `
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
-      `}} />
-
-      <section id="precios" className="py-20 md:py-32 px-4 sm:px-6 bg-[#F8FAFC] relative overflow-hidden font-['Inter'] antialiased">
+    <section id="precios" className="py-20 md:py-32 px-4 sm:px-6 bg-[#F8FAFC] relative overflow-hidden antialiased">
         <div className="absolute top-0 inset-x-0 h-full bg-gradient-to-b from-white to-transparent pointer-events-none" aria-hidden="true" />
         
         <div className="max-w-7xl mx-auto relative z-10">
           
           <div className="text-center mb-16 md:mb-20">
-            <h2 className="font-['Plus_Jakarta_Sans'] text-5xl md:text-6xl font-extrabold text-[#0F172A] mb-6 tracking-tighter">
+            <h2 className="font-display text-5xl md:text-6xl font-extrabold text-[#0F172A] mb-6 tracking-tighter">
               Inversión clara. <span className="text-[#2563EB]">Sin sorpresas.</span>
             </h2>
             <p className="text-2xl text-[#64748B] max-w-2xl mx-auto font-semibold">
@@ -34,7 +29,7 @@ export default function Pricing() {
             
             <div className="bg-white border border-gray-200 rounded-[2rem] p-8 md:p-10 flex flex-col h-full shadow-sm hover:shadow-xl transition-shadow duration-300">
               <div className="mb-8">
-                <h3 className="font-['Plus_Jakarta_Sans'] text-2xl font-extrabold uppercase tracking-widest text-[#0F172A] mb-4">Business Pro</h3>
+                <h3 className="font-display text-2xl font-extrabold uppercase tracking-widest text-[#0F172A] mb-4">Business Pro</h3>
                 <div className="flex items-baseline gap-2 mb-2">
                   <span className="text-6xl lg:text-7xl font-black tracking-tighter text-[#0F172A]">$300</span>
                   <span className="text-[#64748B] font-bold text-lg">/ pago único</span>
@@ -69,7 +64,7 @@ export default function Pricing() {
               </div>
 
               <div className="mb-8 mt-3">
-                <h3 className="font-['Plus_Jakarta_Sans'] text-2xl font-extrabold uppercase tracking-widest text-[#2563EB] mb-4">Profesional</h3>
+                <h3 className="font-display text-2xl font-extrabold uppercase tracking-widest text-[#2563EB] mb-4">Profesional</h3>
                 <div className="flex items-baseline gap-2 mb-2">
                   <span className="text-7xl lg:text-8xl font-black tracking-tighter text-[#0F172A]">$150</span>
                   <span className="text-[#64748B] font-bold text-lg">/ pago único</span>
@@ -103,7 +98,7 @@ export default function Pricing() {
 
             <div className="bg-white border border-gray-200 rounded-[2rem] p-8 md:p-10 flex flex-col h-full shadow-sm hover:shadow-xl transition-shadow duration-300">
               <div className="mb-8">
-                <h3 className="font-['Plus_Jakarta_Sans'] text-2xl font-extrabold uppercase tracking-widest text-[#0F172A] mb-4">Élite Corporativo</h3>
+                <h3 className="font-display text-2xl font-extrabold uppercase tracking-widest text-[#0F172A] mb-4">Élite Corporativo</h3>
                 <div className="flex items-baseline gap-2 mb-2">
                   <span className="text-6xl lg:text-7xl font-black tracking-tighter text-[#0F172A]">$450</span>
                   <span className="text-[#64748B] font-bold text-lg">/ pago único</span>
@@ -161,7 +156,7 @@ export default function Pricing() {
                   <Building2 size={40} aria-hidden="true" className="text-[#2563EB]" />
                 </div>
                 <div>
-                  <h4 className="font-['Plus_Jakarta_Sans'] text-3xl md:text-4xl font-extrabold text-white mb-4">
+                  <h4 className="font-display text-3xl md:text-4xl font-extrabold text-white mb-4">
                     ¿Necesita un sistema a medida?
                   </h4>
                   <p className="text-xl text-[#94A3B8] font-medium max-w-xl">
@@ -188,7 +183,6 @@ export default function Pricing() {
           </p>
 
         </div>
-      </section>
-    </>
+    </section>
   );
 }
