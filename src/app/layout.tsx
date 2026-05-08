@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -19,9 +19,25 @@ const plusJakarta = Plus_Jakarta_Sans({
   weight: ["700", "800"],
 });
 
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#0F172A" },
+  ],
+};
+
 export const metadata: Metadata = {
   title: "ActivaWeb | Páginas Web para Abogados y Médicos",
   description: "Desarrollamos infraestructura web de alto rendimiento y carga instantánea en Ecuador. Planes sin suscripciones eternas.",
+  manifest: "/site.webmanifest",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+    ],
+    apple: { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+  },
   openGraph: {
     title: "ActivaWeb | Tecnología Ágil para su Prestigio",
     description: "Páginas web ultra rápidas para captar pacientes y clientes reales. Pago único, sin sorpresas.",
