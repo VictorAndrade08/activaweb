@@ -27,7 +27,7 @@ export default function Pricing() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 items-center">
             
-            <div className="bg-white border border-gray-200 rounded-[2rem] p-8 md:p-10 flex flex-col h-full shadow-sm hover:shadow-xl transition-shadow duration-300">
+            <div className="order-2 md:order-1 bg-white border border-gray-200 rounded-[2rem] p-8 md:p-10 flex flex-col h-full shadow-sm hover:shadow-xl transition-shadow duration-300">
               <div className="mb-8">
                 <h3 className="font-display text-2xl font-extrabold uppercase tracking-widest text-[#0F172A] mb-4">Business Pro</h3>
                 <div className="flex items-baseline gap-2 mb-2">
@@ -58,7 +58,7 @@ export default function Pricing() {
               </a>
             </div>
 
-            <div className="bg-white border-4 border-[#2563EB] rounded-[2rem] p-8 md:p-10 flex flex-col h-full shadow-[0_30px_60px_rgba(37,99,235,0.15)] relative transform md:-translate-y-4">
+            <div className="order-1 md:order-2 bg-white border-4 border-[#2563EB] rounded-[2rem] p-8 md:p-10 flex flex-col h-full shadow-[0_30px_60px_rgba(37,99,235,0.15)] relative transform md:-translate-y-4">
               <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-[#2563EB] text-white px-8 py-2.5 rounded-full text-xs font-black uppercase tracking-[0.2em] shadow-lg whitespace-nowrap">
                 Entrega Inmediata
               </div>
@@ -96,7 +96,7 @@ export default function Pricing() {
               </a>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-[2rem] p-8 md:p-10 flex flex-col h-full shadow-sm hover:shadow-xl transition-shadow duration-300">
+            <div className="order-3 md:order-3 bg-white border border-gray-200 rounded-[2rem] p-8 md:p-10 flex flex-col h-full shadow-sm hover:shadow-xl transition-shadow duration-300">
               <div className="mb-8">
                 <h3 className="font-display text-2xl font-extrabold uppercase tracking-widest text-[#0F172A] mb-4">Élite Corporativo</h3>
                 <div className="flex items-baseline gap-2 mb-2">

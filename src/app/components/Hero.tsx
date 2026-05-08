@@ -22,12 +22,12 @@ export default function Hero() {
               Activamos su presencia digital en 48 horas
             </div>
             
-            <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[84px] font-extrabold leading-[1.05] md:leading-[0.95] text-[#0F172A] mb-6 md:mb-8 tracking-tighter relative z-20">
-              Su prestigio merece una <br className="hidden md:block" /> 
+            <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-[84px] font-extrabold leading-tight md:leading-[0.95] text-[#0F172A] mb-5 md:mb-8 tracking-tighter relative z-20">
+              Su prestigio merece una <br className="hidden md:block" />
               web con <span className="text-[#2563EB]">tecnología ágil.</span>
             </h1>
 
-            <p className="text-xl md:text-[22px] text-[#475569] mb-10 md:mb-12 max-w-2xl leading-relaxed font-medium relative z-20">
+            <p className="text-base md:text-[22px] text-[#475569] mb-8 md:mb-12 max-w-2xl leading-relaxed font-medium relative z-20">
               Desarrollamos infraestructura de alto rendimiento para <span className="text-[#0F172A] font-semibold">Abogados y Médicos</span> en Ecuador. Sin suscripciones eternas.
             </p>
             

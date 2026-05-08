@@ -46,12 +46,11 @@ export default function BentoGrid() {
             </div>
 
             <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="bg-[#0F172A] rounded-[2rem] p-8 flex flex-col justify-between min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300 shadow-xl shadow-slate-900/5">
+              <div className="bg-white border border-gray-100 rounded-[2rem] p-8 flex flex-col justify-between min-h-[220px] sm:aspect-square hover:-translate-y-1 transition-transform duration-300 shadow-sm">
                 <MapPin className="text-[#2563EB]" size={40} />
                 <div className="mt-6">
-                  {/* TEXTOS MÁS GRANDES EN TARJETAS */}
-                  <h4 className="font-display font-extrabold text-base uppercase tracking-[0.2em] mb-3 text-white">Google Maps</h4>
-                  <p className="text-lg text-[#94A3B8] leading-relaxed font-semibold">Sea el primero en su ciudad.</p>
+                  <h4 className="font-display font-extrabold text-base uppercase tracking-[0.2em] mb-3 text-[#0F172A]">Google Maps</h4>
+                  <p className="text-lg text-[#64748B] leading-relaxed font-semibold">Sea el primero en su ciudad.</p>
                 </div>
               </div>
 

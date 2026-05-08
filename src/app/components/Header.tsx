@@ -105,38 +105,38 @@ const Header = () => {
         </div>
       </nav>
 
-      <div 
-        className={`fixed inset-0 bg-white z-[90] transition-all duration-500 lg:hidden ${
-          isMobileMenuOpen ? 'opacity-100 pointer-events-auto translate-y-0' : 'opacity-0 pointer-events-none -translate-y-10'
+      <div
+        className={`fixed inset-0 bg-white/85 backdrop-blur-md z-[90] transition-all duration-300 lg:hidden ${
+          isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >
-        <div className="flex flex-col h-full justify-center px-10 gap-10 bg-[radial-gradient(at_0%_0%,_rgba(37,99,235,0.05)_0px,transparent_50%)]">
-          <div className="space-y-6">
+        <div className="flex flex-col h-full justify-center items-center px-8 gap-12">
+          <div className="flex flex-col items-center gap-7">
             <p className="text-[11px] font-black uppercase tracking-[0.4em] text-[#2563EB]">Navegación</p>
             {navLinks.map((link) => (
-              <a 
+              <a
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="block text-6xl font-display font-extrabold tracking-tighter text-[#0F172A] hover:text-[#2563EB] transition-colors"
+                className="block text-2xl font-semibold text-[#0F172A] hover:text-[#2563EB] transition-colors"
               >
                 {link.name}
               </a>
             ))}
           </div>
 
-          <div className="mt-10 space-y-6 border-t border-gray-100 pt-10">
-            <a 
+          <div className="w-full max-w-xs space-y-5 border-t border-gray-200/60 pt-8">
+            <a
               href="https://wa.me/593994715278"
               target="_blank"
               rel="noopener noreferrer"
               onClick={trackHeaderClick}
-              className="flex items-center justify-center gap-3 w-full bg-[#0F172A] text-white py-6 rounded-2xl font-black text-2xl shadow-xl active:scale-95 transition-transform"
+              className="flex items-center justify-center gap-2.5 w-full bg-[#0F172A] text-white py-4 rounded-xl font-bold text-base shadow-lg active:scale-95 transition-transform"
             >
-              <Zap size={28} className="fill-[#2563EB] text-[#2563EB]" aria-hidden="true" />
+              <Zap size={18} className="fill-[#2563EB] text-[#2563EB]" aria-hidden="true" />
               Comenzar Ahora
             </a>
-            <div className="flex justify-between items-center text-xs font-bold uppercase tracking-widest text-[#64748B]">
+            <div className="flex justify-between items-center text-[10px] font-bold uppercase tracking-widest text-[#94A3B8]">
               <span>Ecuador 2026</span>
               <span>Ambato • Quito</span>
             </div>
